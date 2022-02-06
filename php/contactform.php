@@ -11,5 +11,5 @@ $headers = "From: ".$from." on portfolio contact form";
 $messageSent = "Contact form message from ".$name." - ".$businessType."\n\n".$message;
 
 mail($to,$headers,$messageSent);
-header("Location: contact.html?mailsend")
+header("Location: contact.html?mailsend");
 }
