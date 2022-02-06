@@ -66,28 +66,90 @@
       </div>
     </nav>
 
-    <!-- WIP ALERT -->
-    <div class="alert alert-warning">
-      <div class="container-fluid">
-        <div class="row">
-          <p class="lead">
-            Warning, this portfolio is a work in progress. As such, some
-            features may not work as intended and many features will not have
-            been implemented yet. Please contact me for my full CV.
-          </p>
-        </div>
-        <div class="row">
-          <button
-            type="button"
-            class="btn btn-outline-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#contactModal"
-          >
-            Open Contact Form
-          </button>
+    <header>
+      <!-- WIP ALERT -->
+      <div class="alert alert-warning">
+        <div class="container-fluid">
+          <div class="row">
+            <p class="lead">
+              Warning, this portfolio is a work in progress. As such, some
+              features may not work as intended and many features will not have
+              been implemented yet. Please contact me for my full CV.
+            </p>
+          </div>
+          <div class="row">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              Open Contact Form
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </header>
+
+    <main>
+      <!-- CONTACT FORM -->
+      <div class="container">
+        <h3 class="border-bottom py-2 mb-3">
+          Contact Form
+          <small class="text-muted">Response within 48 hours</small>
+        </h3>
+        <form action="#" method="post">
+          <div class="row">
+            <div class="col-5 mb-3">
+              <label for="inputName" class="form-label">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="inputName"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="col mb-3">
+              <label for="inputEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="inputEmail"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mb-3">
+              <label for="inputMessage" class="form-label">Message</label>
+              <textarea
+                name="message"
+                id="inputMessage"
+                rows="10"
+                class="form-control"
+              ></textarea>
+            </div>
+          </div>
+          <div class="mb-3">
+            <input
+              type="checkbox"
+              id="agreementCheck"
+              class="form-check-input"
+              required
+            />
+            <label for="agreementCheck" class="form-check-label"
+              >I confirm that I agree to be ccontacted by the email provided and
+              that it is possible to do so.</label
+            >
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script
